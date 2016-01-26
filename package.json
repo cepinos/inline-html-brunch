@@ -1,0 +1,25 @@
+{
+  "name": "inline-css-brunch",
+  "version": "1.0.0",
+  "description": "Brunch plugin to read your CSS files as strings in JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colinbate/inline-css-brunch.git"
+  },
+  "keywords": [
+    "brunch",
+    "brunchplugin",
+    "css",
+    "inline"
+  ],
+  "author": "Colin Bate <colin@colinbate.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinbate/inline-css-brunch/issues"
+  },
+  "homepage": "https://github.com/colinbate/inline-css-brunch#readme"
+}
