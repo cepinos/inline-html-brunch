@@ -19,3 +19,5 @@ class InlineCssCompiler {
 InlineCssCompiler.prototype.brunchPlugin = true;
 InlineCssCompiler.prototype.type = 'javascript';
 InlineCssCompiler.prototype.extension = 'css';
+
+module.exports = InlineCssCompiler;
