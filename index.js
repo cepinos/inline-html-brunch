@@ -1,14 +1,14 @@
 'use strict';
 
-class InlineCssCompiler {
+class InlineHTMLCompiler {
   constructor(config) {
-    this.config = config && config.plugins && config.plugins.inlineCss || {};
+    this.config = config && config.plugins && config.plugins.inlineHTML || {};
   }
   
   compile(file) {
     try {
       const payload = JSON.stringify(file.data);
-      file.data = 'module.exports = ' + payload;
+      file.data = 'define([],function(){return '+payload+'}) ';
       return Promise.resolve(file);
     } catch (err) {
       return Promise.reject(err);
@@ -16,8 +16,8 @@ class InlineCssCompiler {
   }
 }
 
-InlineCssCompiler.prototype.brunchPlugin = true;
-InlineCssCompiler.prototype.type = 'javascript';
-InlineCssCompiler.prototype.extension = 'css';
+InlineHTMLCompiler.prototype.brunchPlugin = true;
+InlineHTMLCompiler.prototype.type = 'javascript';
+InlineHTMLCompiler.prototype.extension = 'html';
 
-module.exports = InlineCssCompiler;
+module.exports = InlineHTMLCompiler;
