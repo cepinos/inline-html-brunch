@@ -1,6 +1,6 @@
 # inline-html-brunch
 
-Brunch plugin to read your CSS files as strings in JS.
+Brunch plugin to read your HTML files as strings in JS.
 
 ## Install
 
