@@ -1,20 +1,22 @@
-# inline-css-brunch
+# inline-html-brunch
 
 Brunch plugin to read your CSS files as strings in JS.
 
 ## Install
 
 ```sh
-npm install -D inline-css-brunch
+npm install inline-html-brunch --save-dev
 ```
 
 ## Usage
 
 ```js
-const myCssString = require('./my-css-file');
+define(['./my-html-file'],function(htmlStr){
+  
+});
 ```
 
-Note that Brunch removes the extension, so don't include the `.css` in the `require`.
+Note that Brunch removes the extension, so don't include the `.html` in the `require`.
 
 ## Future
 
